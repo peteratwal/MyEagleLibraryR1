@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -57,7 +57,8 @@
 </layers>
 <library>
 <packages>
-<package name="603-LED">
+<package name="603-LED-KINGBRIGHT">
+<description>http://www.kingbrightusa.com/images/catalog/SPEC/APT1608SGC.pdf</description>
 <smd name="P$2MINUS" x="0.825" y="0" dx="0.8" dy="0.8" layer="1"/>
 <smd name="P$1PLUS" x="-0.825" y="0" dx="0.8" dy="0.8" layer="1"/>
 <wire x1="-0.8" y1="0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
@@ -67,6 +68,274 @@
 <wire x1="1.6" y1="0.5" x2="1.6" y2="-0.5" width="0.16" layer="21"/>
 <text x="-0.9" y="0.7" size="0.5" layer="25">&gt;Name</text>
 <text x="-1" y="-1.2" size="0.5" layer="27">&gt;Value</text>
+</package>
+<package name="603-MCT-VISHAY">
+<description>http://www.vishay.com/docs/28705/mc_pro.pdf</description>
+<smd name="P$1" x="-0.675" y="0" dx="0.7" dy="0.95" layer="1"/>
+<smd name="P$2" x="0.675" y="0" dx="0.7" dy="0.95" layer="1"/>
+<wire x1="-0.8" y1="0.425" x2="0.8" y2="0.425" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.425" x2="0.8" y2="-0.425" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.425" x2="-0.8" y2="-0.425" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-0.425" x2="-0.8" y2="0.425" width="0.127" layer="51"/>
+<text x="-1.2" y="0.6" size="0.5" layer="25">&gt;Name</text>
+<text x="-1.2" y="-1.1" size="0.5" layer="27">&gt;Value</text>
+</package>
+<package name="DISC-16.5MM-MOV-PANASONIC">
+<description>http://industrial.panasonic.com/lecs/www-data/pdf/AWA0000/AWA0000CE15.pdf</description>
+<pad name="P$1" x="1.15" y="5" drill="1"/>
+<pad name="P$2" x="-1.15" y="-5" drill="1"/>
+<wire x1="-2.7" y1="8.25" x2="2.7" y2="8.25" width="0.127" layer="51"/>
+<wire x1="2.7" y1="8.25" x2="2.7" y2="-8.25" width="0.127" layer="51"/>
+<wire x1="2.7" y1="-8.25" x2="-2.7" y2="-8.25" width="0.127" layer="51"/>
+<wire x1="-2.7" y1="-8.25" x2="-2.7" y2="8.25" width="0.127" layer="51"/>
+<text x="-1" y="-1" size="0.5" layer="25" rot="R90">&gt;Name</text>
+<text x="1" y="-1" size="0.5" layer="25" rot="R90">&gt;Value</text>
+</package>
+<package name="CON-SCREW-2LVL-6POS-TE-CUSTOM-120PUMP">
+<description>http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=796692&amp;DocType=Customer+Drawing&amp;DocLang=English</description>
+<pad name="PUMP2-G" x="0" y="7.62" drill="1.4"/>
+<pad name="PUMP2-N" x="5.08" y="7.62" drill="1.4"/>
+<pad name="PUMP2-L" x="10.16" y="7.62" drill="1.4"/>
+<pad name="PUMP1-G" x="15.24" y="7.62" drill="1.4"/>
+<pad name="PUMP1-N" x="20.32" y="7.62" drill="1.4"/>
+<pad name="PUMP1-L" x="25.4" y="7.62" drill="1.4"/>
+<pad name="NC-G" x="2.54" y="-7.62" drill="1.4"/>
+<pad name="NC-N" x="7.62" y="-7.62" drill="1.4"/>
+<pad name="NC-L" x="12.7" y="-7.62" drill="1.4"/>
+<pad name="SPARE-G" x="17.78" y="-7.62" drill="1.4"/>
+<pad name="SPARE-N" x="22.86" y="-7.62" drill="1.4"/>
+<pad name="SPARE-L" x="27.94" y="-7.62" drill="1.4"/>
+<wire x1="-2.54" y1="12.12" x2="27.94" y2="12.12" width="0.127" layer="51"/>
+<wire x1="27.94" y1="12.12" x2="27.94" y2="0" width="0.127" layer="51"/>
+<wire x1="27.94" y1="0" x2="30.48" y2="0" width="0.127" layer="51"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="-9.38" width="0.127" layer="51"/>
+<wire x1="30.48" y1="-9.38" x2="0" y2="-9.38" width="0.127" layer="51"/>
+<wire x1="0" y1="-9.38" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="12.12" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="12.5" x2="27.94" y2="12.5" width="0.175" layer="21"/>
+<text x="-1" y="4.5" size="0.5" layer="25">&gt;Name</text>
+<text x="-1" y="3" size="0.5" layer="27">&gt;Value</text>
+<text x="20.6" y="9.5" size="1" layer="51" align="center">Pump 1</text>
+<text x="5" y="9.6" size="1" layer="51" align="center">Pump 2</text>
+<text x="22.8" y="-5.8" size="1" layer="51" align="center">Spare</text>
+<text x="7.5" y="-5.9" size="1" layer="51" align="center">NC</text>
+<text x="25.4" y="7.6" size="0.5" layer="51" align="center">L</text>
+<text x="10.2" y="7.6" size="0.5" layer="51" align="center">L</text>
+<text x="28" y="-7.7" size="0.5" layer="51" align="center">L</text>
+<text x="12.8" y="-7.7" size="0.5" layer="51" align="center">L</text>
+<text x="20.4" y="7.6" size="0.5" layer="51" align="center">N</text>
+<text x="22.9" y="-7.7" size="0.5" layer="51" align="center">N</text>
+<text x="7.6" y="-7.7" size="0.5" layer="51" align="center">N</text>
+<text x="5.1" y="7.6" size="0.5" layer="51" align="center">N</text>
+<text x="15.2" y="7.6" size="0.5" layer="51" align="center">G</text>
+<text x="17.8" y="-7.7" size="0.5" layer="51" align="center">G</text>
+<text x="2.5" y="-7.7" size="0.5" layer="51" align="center">G</text>
+<text x="0" y="7.6" size="0.5" layer="51" align="center">G</text>
+</package>
+<package name="CON-SCREW-2LVL-4POS-TE-CUSTOM-24SOL">
+<description>http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=796692&amp;DocType=Customer+Drawing&amp;DocLang=English</description>
+<pad name="P1-L" x="0" y="7.62" drill="1.4"/>
+<pad name="P$2" x="5.08" y="7.62" drill="1.4"/>
+<pad name="P$3" x="10.16" y="7.62" drill="1.4"/>
+<pad name="P$4" x="15.24" y="7.62" drill="1.4"/>
+<pad name="P$7" x="2.54" y="-7.62" drill="1.4"/>
+<pad name="P$8" x="7.62" y="-7.62" drill="1.4"/>
+<pad name="P$9" x="12.7" y="-7.62" drill="1.4"/>
+<pad name="P$10" x="17.78" y="-7.62" drill="1.4"/>
+<wire x1="-2.54" y1="12.12" x2="17.78" y2="12.12" width="0.127" layer="51"/>
+<wire x1="17.78" y1="12.12" x2="17.78" y2="0" width="0.127" layer="51"/>
+<wire x1="17.78" y1="0" x2="20.32" y2="0" width="0.127" layer="51"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="-9.38" width="0.127" layer="51"/>
+<wire x1="20.32" y1="-9.38" x2="0" y2="-9.38" width="0.127" layer="51"/>
+<wire x1="0" y1="-9.38" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="12.12" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="12.5" x2="17.78" y2="12.5" width="0.175" layer="21"/>
+<text x="-1" y="4.5" size="0.5" layer="25">&gt;Name</text>
+<text x="-1" y="3" size="0.5" layer="27">&gt;Value</text>
+<text x="12.5" y="9.4" size="1" layer="51" align="center">SOL-1</text>
+<text x="5.1" y="-5.9" size="1" layer="51" align="center">SPARE-24</text>
+<text x="2.4" y="9.4" size="1" layer="51" align="center">SOL-2</text>
+<text x="15.1" y="-6.1" size="1" layer="51" align="center">SOL-3</text>
+<text x="15.3" y="7.6" size="0.5" layer="51" align="center">X1</text>
+<text x="10.2" y="7.6" size="0.5" layer="51" align="center">X2</text>
+<text x="5.1" y="7.6" size="0.5" layer="51" align="center">X1</text>
+<text x="0" y="7.6" size="0.5" layer="51" align="center">X2</text>
+<text x="17.8" y="-7.6" size="0.5" layer="51" align="center">X1</text>
+<text x="12.7" y="-7.6" size="0.5" layer="51" align="center">X2</text>
+<text x="7.6" y="-7.6" size="0.5" layer="51" align="center">X1</text>
+<text x="2.5" y="-7.7" size="0.5" layer="51" align="center">X2</text>
+</package>
+<package name="CON-SCREW-2LVL-3POS-TE-CUSTOM-TEMP-PRESS-SENSOR">
+<description>http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=796692&amp;DocType=Customer+Drawing&amp;DocLang=English</description>
+<pad name="0V-T" x="0" y="7.62" drill="1.4"/>
+<pad name="T" x="5.08" y="7.62" drill="1.4"/>
+<pad name="5V-T" x="10.16" y="7.62" drill="1.4"/>
+<pad name="0V-P" x="2.54" y="-7.62" drill="1.4"/>
+<pad name="P" x="7.62" y="-7.62" drill="1.4"/>
+<pad name="5V-2" x="12.7" y="-7.62" drill="1.4"/>
+<wire x1="-2.54" y1="12.12" x2="12.7" y2="12.12" width="0.127" layer="51"/>
+<wire x1="12.7" y1="12.12" x2="12.7" y2="0" width="0.127" layer="51"/>
+<wire x1="12.7" y1="0" x2="15.24" y2="0" width="0.127" layer="51"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-9.38" width="0.127" layer="51"/>
+<wire x1="15.24" y1="-9.38" x2="0" y2="-9.38" width="0.127" layer="51"/>
+<wire x1="0" y1="-9.38" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="12.12" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="12.5" x2="12.7" y2="12.5" width="0.175" layer="21"/>
+<text x="-1" y="4.5" size="0.5" layer="25">&gt;Name</text>
+<text x="-1" y="3" size="0.5" layer="27">&gt;Value</text>
+<text x="7.1" y="-5.9" size="1" layer="51" align="center">PRESSURE</text>
+<text x="5.4" y="9.4" size="1" layer="51" align="center">TEMPERATURE</text>
+<text x="10.2" y="7.6" size="0.5" layer="51" align="center">5V</text>
+<text x="5.1" y="7.6" size="0.5" layer="51" align="center">T</text>
+<text x="0" y="7.6" size="0.5" layer="51" align="center">0V</text>
+<text x="12.7" y="-7.6" size="0.5" layer="51" align="center">5V</text>
+<text x="7.6" y="-7.6" size="0.5" layer="51" align="center">P</text>
+<text x="2.5" y="-7.7" size="0.5" layer="51" align="center">0V</text>
+</package>
+<package name="CON-SCREW-2LVL-2POS-TE-CUSTOM-LEVEL-SENSOR">
+<description>http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=796692&amp;DocType=Customer+Drawing&amp;DocLang=English</description>
+<pad name="RS" x="0" y="7.62" drill="1.4"/>
+<pad name="RF" x="5.08" y="7.62" drill="1.4"/>
+<pad name="0V-2" x="2.54" y="-7.62" drill="1.4"/>
+<pad name="0V-1" x="7.62" y="-7.62" drill="1.4"/>
+<wire x1="-2.54" y1="12.12" x2="7.62" y2="12.12" width="0.127" layer="51"/>
+<wire x1="7.62" y1="12.12" x2="7.62" y2="0" width="0.127" layer="51"/>
+<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.127" layer="51"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-9.38" width="0.127" layer="51"/>
+<wire x1="10.16" y1="-9.38" x2="0" y2="-9.38" width="0.127" layer="51"/>
+<wire x1="0" y1="-9.38" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="12.12" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="12.5" x2="7.62" y2="12.5" width="0.175" layer="21"/>
+<text x="-1" y="4.5" size="0.5" layer="25">&gt;Name</text>
+<text x="-1" y="3" size="0.5" layer="27">&gt;Value</text>
+<text x="2.4" y="9.5" size="1" layer="51" align="center">LEVEL</text>
+<text x="5.1" y="7.6" size="0.5" layer="51" align="center">RF</text>
+<text x="0" y="7.6" size="0.5" layer="51" align="center">RS</text>
+<text x="7.6" y="-7.6" size="0.5" layer="51" align="center">0V</text>
+<text x="2.5" y="-7.7" size="0.5" layer="51" align="center">0V</text>
+</package>
+<package name="CON-SCREW-2LVL-2POS-TE-CUSTOM-LEVEL-PRESS-SWITCH">
+<description>http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=796692&amp;DocType=Customer+Drawing&amp;DocLang=English</description>
+<pad name="0V-L" x="0" y="7.62" drill="1.4"/>
+<pad name="L" x="5.08" y="7.62" drill="1.4"/>
+<pad name="0V-2" x="2.54" y="-7.62" drill="1.4"/>
+<pad name="P" x="7.62" y="-7.62" drill="1.4"/>
+<wire x1="-2.54" y1="12.12" x2="7.62" y2="12.12" width="0.127" layer="51"/>
+<wire x1="7.62" y1="12.12" x2="7.62" y2="0" width="0.127" layer="51"/>
+<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.127" layer="51"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-9.38" width="0.127" layer="51"/>
+<wire x1="10.16" y1="-9.38" x2="0" y2="-9.38" width="0.127" layer="51"/>
+<wire x1="0" y1="-9.38" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="12.12" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="12.5" x2="7.62" y2="12.5" width="0.175" layer="21"/>
+<text x="-1" y="4.5" size="0.5" layer="25">&gt;Name</text>
+<text x="-1" y="3" size="0.5" layer="27">&gt;Value</text>
+<text x="2.4" y="9.5" size="1" layer="51" align="center">LVL. SW</text>
+<text x="5.1" y="7.6" size="0.5" layer="51" align="center">L</text>
+<text x="0" y="7.6" size="0.5" layer="51" align="center">0V</text>
+<text x="7.6" y="-7.6" size="0.5" layer="51" align="center">P</text>
+<text x="2.5" y="-7.7" size="0.5" layer="51" align="center">0V</text>
+<text x="5.1" y="-5.8" size="1" layer="51" align="center">PRESS. SW</text>
+</package>
+<package name="CON-SCREW-2LVL-2POS-TE-CUSTOM-RELAY">
+<description>http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=796692&amp;DocType=Customer+Drawing&amp;DocLang=English</description>
+<pad name="O1" x="0" y="7.62" drill="1.4"/>
+<pad name="I1" x="5.08" y="7.62" drill="1.4"/>
+<pad name="O2" x="2.54" y="-7.62" drill="1.4"/>
+<pad name="I2" x="7.62" y="-7.62" drill="1.4"/>
+<wire x1="-2.54" y1="12.12" x2="7.62" y2="12.12" width="0.127" layer="51"/>
+<wire x1="7.62" y1="12.12" x2="7.62" y2="0" width="0.127" layer="51"/>
+<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.127" layer="51"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="-9.38" width="0.127" layer="51"/>
+<wire x1="10.16" y1="-9.38" x2="0" y2="-9.38" width="0.127" layer="51"/>
+<wire x1="0" y1="-9.38" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="12.12" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="12.5" x2="7.62" y2="12.5" width="0.175" layer="21"/>
+<text x="-1" y="4.5" size="0.5" layer="25">&gt;Name</text>
+<text x="-1" y="3" size="0.5" layer="27">&gt;Value</text>
+<text x="2.4" y="9.5" size="1" layer="51" align="center">RELAY 1</text>
+<text x="5.1" y="7.6" size="0.5" layer="51" align="center">I1</text>
+<text x="0" y="7.6" size="0.5" layer="51" align="center">O1</text>
+<text x="7.6" y="-7.6" size="0.5" layer="51" align="center">I2</text>
+<text x="2.5" y="-7.7" size="0.5" layer="51" align="center">O2</text>
+<text x="5.1" y="-5.8" size="1" layer="51" align="center">RELAY 2</text>
+</package>
+<package name="CON-SCREW-1LVL-4POS-TE-CUSTOM-DC-POWER">
+<description>http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&amp;DocNm=282841&amp;DocType=Customer+Drawing&amp;DocLang=English</description>
+<pad name="0V" x="0" y="0" drill="1.4"/>
+<pad name="3.3V" x="5.08" y="0" drill="1.4"/>
+<pad name="5V" x="10.16" y="0" drill="1.4"/>
+<pad name="12V" x="15.24" y="0" drill="1.4"/>
+<wire x1="-2.54" y1="4.5" x2="-2.54" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="-4.5" x2="17.78" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="17.78" y1="-4.5" x2="17.78" y2="4.5" width="0.127" layer="51"/>
+<wire x1="17.78" y1="4.5" x2="-2.54" y2="4.5" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="4.88" x2="17.78" y2="4.88" width="0.175" layer="21"/>
+<text x="-2" y="-2.5" size="0.5" layer="25">&gt;Name</text>
+<text x="-2" y="-3.4" size="0.5" layer="27">&gt;Value</text>
+<text x="7.5" y="2.2" size="1" layer="51" align="center">DC IN</text>
+<text x="0" y="0" size="0.5" layer="51" align="center">0V</text>
+<text x="5.1" y="0" size="0.5" layer="51" align="center">3V</text>
+<text x="10.2" y="0" size="0.5" layer="51" align="center">5V</text>
+<text x="15.3" y="-0.1" size="0.5" layer="51" align="center">12V</text>
+</package>
+<package name="CON-SCREW-1LVL-3POS-TE-CUSTOM-120-POWER">
+<pad name="G" x="0" y="0" drill="1.4"/>
+<pad name="N" x="5.08" y="0" drill="1.4"/>
+<pad name="L" x="10.16" y="0" drill="1.4"/>
+<wire x1="-2.54" y1="4.5" x2="-2.54" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="-4.5" x2="12.7" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="12.7" y1="-4.5" x2="12.7" y2="4.5" width="0.127" layer="51"/>
+<wire x1="12.7" y1="4.5" x2="-2.54" y2="4.5" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="4.88" x2="12.7" y2="4.88" width="0.175" layer="21"/>
+<text x="-2" y="-2.5" size="0.5" layer="25">&gt;Name</text>
+<text x="-2" y="-3.4" size="0.5" layer="27">&gt;Value</text>
+<text x="5" y="2.2" size="1" layer="51" align="center">120V~ IN</text>
+<text x="0" y="0" size="0.5" layer="51" align="center">G</text>
+<text x="5.1" y="0" size="0.5" layer="51" align="center">N</text>
+<text x="10.2" y="0" size="0.5" layer="51" align="center">L</text>
+</package>
+<package name="CON-SCREW-1LVL-3POS-TE-CUSTOM-24-POWER">
+<pad name="X2" x="0" y="0" drill="1.4"/>
+<pad name="X1" x="5.08" y="0" drill="1.4"/>
+<wire x1="-2.54" y1="4.5" x2="-2.54" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="-4.5" x2="7.62" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="7.62" y1="-4.5" x2="7.62" y2="4.5" width="0.127" layer="51"/>
+<wire x1="7.62" y1="4.5" x2="-2.54" y2="4.5" width="0.127" layer="51"/>
+<wire x1="-2.54" y1="4.88" x2="7.62" y2="4.88" width="0.175" layer="21"/>
+<text x="-2" y="-2.5" size="0.5" layer="25">&gt;Name</text>
+<text x="-2" y="-3.4" size="0.5" layer="27">&gt;Value</text>
+<text x="2.5" y="2.1" size="1" layer="51" align="center">24V~ IN</text>
+<text x="0" y="0" size="0.5" layer="51" align="center">X2</text>
+<text x="5.1" y="0" size="0.5" layer="51" align="center">X1</text>
+</package>
+<package name="603-MCR03-ROHM">
+<description>http://rohmfs.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr_g.pdf</description>
+<smd name="P$1" x="-0.75" y="0" dx="0.5" dy="0.8" layer="1"/>
+<smd name="P$2" x="0.75" y="0" dx="0.5" dy="0.8" layer="1"/>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.127" layer="51"/>
+<text x="-1.2" y="0.6" size="0.5" layer="25">&gt;Name</text>
+<text x="-1.2" y="-1.1" size="0.5" layer="27">&gt;Value</text>
+</package>
+<package name="1206-MLA-LITTLEFUSE">
+<description>http://www.littelfuse.com/products/varistors/multilayer/~/media/electronics/datasheets/varistors/littelfuse_varistor_mla_datasheet.pdf.pdf</description>
+<smd name="P$1" x="-1.56" y="0" dx="1.02" dy="1.65" layer="1"/>
+<smd name="P$2" x="1.56" y="0" dx="1.02" dy="1.65" layer="1"/>
+<wire x1="-1.6" y1="0.8" x2="1.6" y2="0.8" width="0.127" layer="51"/>
+<wire x1="1.6" y1="0.8" x2="1.6" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-0.8" x2="-1.6" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="-0.8" x2="-1.6" y2="0.8" width="0.127" layer="51"/>
+<text x="-1.1" y="1" size="0.5" layer="25">&gt;Name</text>
+<text x="-1.2" y="-1.5" size="0.5" layer="27">&gt;Value</text>
 </package>
 </packages>
 <symbols>
@@ -97,7 +366,7 @@
 <gate name="LED$1" symbol="LED" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="603-LED">
+<device name="" package="603-LED-KINGBRIGHT">
 <connects>
 <connect gate="LED$1" pin="P$1PLUS" pad="P$1PLUS"/>
 <connect gate="LED$1" pin="P$2" pad="P$2MINUS"/>
